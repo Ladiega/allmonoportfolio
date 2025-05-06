@@ -4,7 +4,6 @@ import Footer from "./Footer";
 
 import Image from "next/image";
 import portrait from "../../public/img/portrait2.png";
-import { Maiden_Orange } from "next/font/google";
 
 export default function Section1() {
   return (
