@@ -24,14 +24,13 @@ const images = [
 export default function CarouselPortrait() {
   const [current, setCurrent] = useState(0);
   const total = images.length;
-  console.log(total);
 
   const nextSlide = () => setCurrent((current + 1) % total);
   const prevSlide = () => setCurrent((current - 1 + total) % total);
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto overflow-hidden bg-black">
-      <div className="relative h-68 sm:h-80 md:h-96">
+    <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-lg">
+      <div className="relative h-64 sm:h-80 md:h-96">
         {images.map((src, index) => (
           <div
             key={index}
@@ -43,7 +42,8 @@ export default function CarouselPortrait() {
               src={src}
               alt={`Imagen ${index + 1}`}
               fill
-              className="w-screen"
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 700px"
             />
           </div>
         ))}
