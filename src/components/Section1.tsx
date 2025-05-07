@@ -7,12 +7,12 @@ import portrait from "../../public/img/portrait2.png";
 
 export default function Section1() {
   return (
-    <main className="text-white w-full h-10">
+    <main className="text-white w-full h-10 ">
       <div className=" z-10">
         <div className=" z-20">
           <Image src={portrait} alt="Retrato" />
         </div>
-        <div className="text-black  z-30 pl-10 w-2xl">
+        <div className="text-black  z-30 pl-10 w-2xl ">
           <h1 className="text-5xl font-black">ALLMONO</h1>
           <h2 className=" uppercase font-bold">Fotógrafo y Videógrafo</h2>
           <p className="mt-3">
