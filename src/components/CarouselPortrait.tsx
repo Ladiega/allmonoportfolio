@@ -30,8 +30,8 @@ export default function CarouselPortrait() {
   const prevSlide = () => setCurrent((current - 1 + total) % total);
 
   return (
-    <div className="relative  bg-black">
-      <div className="relative w-screen h-screen">
+    <div className="relative w-full max-w-3xl mx-auto overflow-hidden bg-black">
+      <div className="relative h-68 sm:h-80 md:h-96">
         {images.map((src, index) => (
           <div
             key={index}
@@ -39,7 +39,12 @@ export default function CarouselPortrait() {
               index === current ? "opacity-100" : "opacity-0"
             }`}
           >
-            <Image src={src} alt={`Imagen ${index + 1}`} fill />
+            <Image
+              src={src}
+              alt={`Imagen ${index + 1}`}
+              fill
+              className="w-screen"
+            />
           </div>
         ))}
       </div>

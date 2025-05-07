@@ -16,7 +16,7 @@ const images = [
   "/img/imgProtfolio/bands/img9.jpg",
   "/img/imgProtfolio/bands/img10.jpg",
   "/img/imgProtfolio/bands/img11.jpg",
-  "/img/imgProtfolio/bands/img12.jpeg",
+  "/img/imgProtfolio/bands/img12.jpg",
 ];
 
 export default function CarouselBands() {
@@ -28,8 +28,8 @@ export default function CarouselBands() {
   const prevSlide = () => setCurrent((current - 1 + total) % total);
 
   return (
-    <div className="relative ">
-      <div className="relative relative w-screen h-screen">
+    <div className="relative w-full max-w-3xl mx-auto overflow-hidden  shadow-lg">
+      <div className="relative h-64 sm:h-80 md:h-96">
         {images.map((src, index) => (
           <div
             key={index}
@@ -37,7 +37,13 @@ export default function CarouselBands() {
               index === current ? "opacity-100" : "opacity-0"
             }`}
           >
-            <Image src={src} alt={`Imagen ${index + 1}`} fill />
+            <Image
+              src={src}
+              alt={`Imagen ${index + 1}`}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 700px"
+            />
           </div>
         ))}
       </div>
