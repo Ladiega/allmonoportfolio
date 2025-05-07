@@ -18,8 +18,8 @@ export default function Section1() {
           <p className="mt-3">
             Soy Fernando Forero fotógrafo y videógrafo profesional. Trabajo en
             fotografía documental, retrato y cobertura de eventos. Este espacio
-            reúne una selección de proyectos y encargos recientes. Disponible
-            para colaboraciones y contrataciones.
+            reúne una selección de proyectos y encargos. Disponible para
+            colaboraciones y contrataciones.
           </p>
           <div className="bg-amber-400 mt-3 mb-3 p-2 w-fit rounded">
             <Link href="/portafolio">PORTAFOLIO</Link>

@@ -27,11 +27,18 @@ export default function Navbar() {
       </div>
       <div className="flex gap-3">
         <div>
-          <Image src={instagram} alt="instagram" width={40} />
+          <Link
+            href="https://www.instagram.com/all.mono/?hl=es-la"
+            target="_blank"
+          >
+            <Image src={instagram} alt="instagram" width={40} />
+          </Link>
         </div>
 
         <div>
-          <Image src={vimeo} alt="instagram" width={40} />
+          <Link href="https://vimeo.com/user171798796" target="_blank">
+            <Image src={vimeo} alt="instagram" width={40} />
+          </Link>
         </div>
       </div>
     </nav>
