@@ -3,7 +3,7 @@ import Link from "next/link";
 import Footer from "./Footer";
 
 import Image from "next/image";
-import portrait from "../../public/img/portrait2.png";
+import portrait from "../../public/img/portraitcurve.png";
 
 export default function Section1() {
   return (
