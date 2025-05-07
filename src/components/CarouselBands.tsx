@@ -16,7 +16,7 @@ const images = [
   "/img/imgProtfolio/bands/img9.jpg",
   "/img/imgProtfolio/bands/img10.jpg",
   "/img/imgProtfolio/bands/img11.jpg",
-  "/img/imgProtfolio/bands/img12.jpg",
+  "/img/imgProtfolio/bands/img12.jpeg",
 ];
 
 export default function CarouselBands() {
@@ -50,16 +50,12 @@ export default function CarouselBands() {
       {/* Botones */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/80"
-      >
-        ◀
-      </button>
+        className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 bg-white text-black p-2 rounded-full hover:bg-amber-400 cursor-pointer"
+      ></button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/80"
-      >
-        ▶
-      </button>
+        className="absolute w-3 h-3 right-2 top-1/2 -translate-y-1/2 bg-white text-black p-2 rounded-full hover:bg-amber-400 cursor-pointer"
+      ></button>
 
       {/* Indicadores */}
       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
@@ -68,7 +64,7 @@ export default function CarouselBands() {
             key={i}
             onClick={() => setCurrent(i)}
             className={`w-3 h-3 rounded-full ${
-              i === current ? "bg-white" : "bg-white/50"
+              i === current ? "bg-white" : "bg-black"
             }`}
           />
         ))}

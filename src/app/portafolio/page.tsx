@@ -9,8 +9,10 @@ export default function Portfolio() {
         <div>
           <h1 className="pt-20 text-center text-2xl">PORTAFÓLIO</h1>
         </div>
+        <div>
+          <CarouselBands />
+        </div>
 
-        <CarouselBands />
         <div className="bg-black">
           <CarouselPortrait />
         </div>
