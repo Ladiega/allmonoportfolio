@@ -1,11 +1,10 @@
-import Link from "next/link";
-
 import Footer from "./Footer";
 
 import Image from "next/image";
 import portrait from "../../public/img/portraitcurve.png";
-import vimeo1 from "../../public/img/vimeo1.png";
-import vimeo2 from "../../public/img/vimeo2.png";
+
+import GridGalleryBands from "./GridGalleryBands";
+import GridGalleryPortrait from "./GridGalleryPortrait";
 
 export default function Section1() {
   return (
@@ -14,7 +13,7 @@ export default function Section1() {
         <div className=" z-20">
           <Image src={portrait} alt="Retrato" />
         </div>
-        <div className="text-black  z-30 pl-10 w-2xl  ">
+        {/* <div className="text-black  z-30 pl-10 w-2xl  ">
           <div>
             <h1 className="text-5xl font-black">ALLMONO</h1>
           </div>
@@ -32,23 +31,9 @@ export default function Section1() {
           <div className="bg-amber-400 mt-3 mb-3 p-2 w-fit rounded">
             <Link href="/portafolio">PORTAFOLIO</Link>
           </div>
-        </div>
-
-        <div>
-          <div className="w-full aspect-video">
-            <Link href="https://vimeo.com/user171798796">
-              <Image src={vimeo1} alt="vimeo" />
-            </Link>
-          </div>
-
-          <div className="w-full aspect-video">
-            <div className="w-full aspect-video">
-              <Link href="https://vimeo.com/user171798796">
-                <Image src={vimeo2} alt="vimeo" />
-              </Link>
-            </div>
-          </div>
-        </div>
+        </div> */}
+        <GridGalleryBands />
+        <GridGalleryPortrait />
 
         <div className="">
           <Footer />

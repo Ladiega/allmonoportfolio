@@ -7,7 +7,8 @@ import logo from "../../public/img/logo-yellow.svg";
 
 export default function Navbar() {
   return (
-    <nav className="bg-transparent text-white flex justify-between w-full pr-10 pl-10 pt-5 pb-5 flex-no-wrap fixed top-0 z-40  items-center shadow-md shadow-black/5 ">
+    // fixed shadow-md shadow-black/5 flex-no-wrap  top-0 z-40    para navbar stcky
+    <nav className="bg-trasparent absolute text-white flex justify-between w-full pr-10 pl-10 pt-5 pb-5 items-center  ">
       <div>
         <Link href="/">
           <Image src={logo} alt="instagram" width={40} className="" />
