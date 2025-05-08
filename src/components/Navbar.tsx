@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="hidden md:block">
         <ul className="flex gap-5 ">
           <li>
-            <Link href="/">PORTAFOLIO</Link>
+            <Link href="/portafolio">PORTAFOLIO</Link>
           </li>
           <li>
             <Link href="/">SOBRE MI</Link>

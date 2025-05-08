@@ -16,8 +16,6 @@ const images = [
   "/img/imgProtfolio/portrait/img10.jpg",
   "/img/imgProtfolio/portrait/img11.jpg",
   "/img/imgProtfolio/portrait/img12.jpg",
-  "/img/imgProtfolio/portrait/img13.jpg",
-  "/img/imgProtfolio/portrait/img14.jpg",
 ];
 
 export default function GridGalleryPortrait() {
