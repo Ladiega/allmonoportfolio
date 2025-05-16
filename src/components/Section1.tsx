@@ -1,7 +1,7 @@
 import Footer from "./Footer";
 
 import Image from "next/image";
-import portrait from "../../public/img/portraitcurve.png";
+import portrait from "../../public/img/ALLMONPORTRAIT.png";
 
 import GridGalleryBands from "./GridGalleryBands";
 import GridGalleryPortrait from "./GridGalleryPortrait";
